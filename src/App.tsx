@@ -38,6 +38,9 @@ function App() {
             <NewComponent onClickHandler={onClickHandler} currentMoney={currentMoney}/>
         </div>
 
+
+
+        // All this code moved in created component NewComponent.tsx. I need to change the code error in All project
         // <>
         //     <ul>
         //         {currentMoney.map((moneyArray, index) => {
@@ -56,6 +59,7 @@ function App() {
         //         <button onClick={() => onClickHandler('All')}>All</button>
         //     </div>
         // </>
+        // All this code moved in created component NewComponent.tsx. I need to change the code error in All project
     );
 }
 

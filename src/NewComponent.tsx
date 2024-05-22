@@ -1,16 +1,13 @@
 import React from 'react';
+import {FilterType} from './App';
 
 export type NewComponentType = {
     currentMoney: Array<currentMoneyType>
-    onClickHandler: (nameButton:string)=>void
+    onClickHandler: (nameButton:FilterType)=>void
 
 }
 
 
-
-type onClickHandlerType = {
-    setFilter: (nameButton:string) => void
-}
 
 type currentMoneyType = {
     banknots: string
