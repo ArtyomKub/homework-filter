@@ -15,9 +15,23 @@ function App() {
     ])
 
     return (
-        <div className="App">
+        <>
+            <ul>
+                {money.map((moneyArray, index) => {
+                    return (
+                        <li key={index}>
+                            <span>{moneyArray.banknots} -</span>
+                            <span>{moneyArray.value} -</span>
+                            <span>{moneyArray.number}</span>
+                        </li>
+                )
+                })}
+            </ul>
+            <button>Dollars</button>
+            <button>Rubles</button>
+            <button>All</button>
 
-        </div>
+        </>
     );
 }
 
