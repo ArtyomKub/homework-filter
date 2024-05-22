@@ -14,6 +14,10 @@ function App() {
         {banknots: 'RUBLS', value: 50, number: ' v1234567890'},
     ])
 
+    const onClickHandler = (name: string) => {
+        console.log(name)
+    }
+
     return (
         <>
             <ul>
@@ -28,9 +32,9 @@ function App() {
                 })}
             </ul>
             <div className={'buttonClass'}>
-                <button>Dollars</button>
-                <button>Rubles</button>
-                <button>All</button>
+                <button onClick={() => onClickHandler('Dollars')}>Dollars</button>
+                <button onClick={() => onClickHandler('Rubles')}>Rubles</button>
+                <button onClick={() => onClickHandler('All')}>All</button>
             </div>
         </>
     );
