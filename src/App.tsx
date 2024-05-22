@@ -24,13 +24,14 @@ function App() {
                             <span>{moneyArray.value} -</span>
                             <span>{moneyArray.number}</span>
                         </li>
-                )
+                    )
                 })}
             </ul>
-            <button>Dollars</button>
-            <button>Rubles</button>
-            <button>All</button>
-
+            <div>
+                <button>Dollars</button>
+                <button>Rubles</button>
+                <button>All</button>
+            </div>
         </>
     );
 }
