@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import {NewComponent} from './NewComponent';
 
 type FilterType = 'All' | 'Dollars' | 'Rubles'
 
@@ -34,7 +35,7 @@ function App() {
 
     return (
        <div>
-
+            <NewComponent/>
        </div>
     );
 }
