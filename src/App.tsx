@@ -27,7 +27,7 @@ function App() {
                     )
                 })}
             </ul>
-            <div>
+            <div className={'buttonClass'}>
                 <button>Dollars</button>
                 <button>Rubles</button>
                 <button>All</button>

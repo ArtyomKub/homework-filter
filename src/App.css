@@ -1,0 +1,23 @@
+ul {
+  border: 1px solid #666;
+  padding: 10px;
+  text-align: center;
+}
+
+.buttonClass {
+  width: 15%; /* Define the width */
+  margin: 0 auto; /* Auto margin on all sides */
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: cornsilk; /* Green */
+  color: black;
+  margin: 2px 4px;
+  text-align: center;
+  text-decoration: #666666;
+  display: inline-block;
+  font-size: 16px;
+}
