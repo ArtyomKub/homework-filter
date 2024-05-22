@@ -1,6 +1,17 @@
 import React from 'react';
 
-export const NewComponent = () => {
+export type NewComponentType = {
+    onClickHandler: (nameButton: string) => void
+    currentMoney: Array<CurrentMoneyType>
+}
+
+export type CurrentMoneyType = {
+    banknots: string
+    value: number
+    number: string
+}
+
+export const NewComponent = (props: NewComponentType) => {
     return (
         <>
             <ul>
@@ -15,9 +26,9 @@ export const NewComponent = () => {
                 })}
             </ul>
             <div className={'buttonClass'}>
-                <button onClick={() => onClickHandler('Dollars')}>Dollars</button>
-                <button onClick={() => onClickHandler('Rubles')}>Rubles</button>
-                <button onClick={() => onClickHandler('All')}>All</button>
+                <button onClick={() => props.onClickHandler('Dollars')}>Dollars</button>
+                <button onClick={() => props.onClickHandler('Rubles')}>Rubles</button>
+                <button onClick={() => props.onClickHandler('All')}>All</button>
             </div>
         </>
     );
